@@ -34,7 +34,7 @@ db = client.mooo
 cow_history = db.cow_history
 
 # Load Siamese neural network model and extract necessary layers
-loaded_model = tf.keras.models.load_model('../cowMuzzleSiameseModel_New.keras',safe_mode=False)
+loaded_model = tf.keras.models.load_model('../CowMuzzleSiameseModel.keras',safe_mode=False)
 # loaded_model.save('../cowMuzzleSiameseModel.h5')
 # loaded_model = tf.keras.models.load_model('../cowMuzzleSiameseModel.h5')
 encoder_layer = keras.Model(inputs=loaded_model.get_layer('imageEncoder').input, outputs=loaded_model.get_layer("imageEncoder").output)
