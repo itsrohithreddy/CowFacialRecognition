@@ -46,9 +46,7 @@ The Cow Facial Recognition system can be used in various real-world scenarios to
 
 4.Ensure MongoDB is installed locally on your machine. You can download it from [MongoDB's official website](https://www.mongodb.com/try/download/community).
 
-5.Start the MongoDB service by running the following command:
-   ```bash
-   mongod```
+5.Start the MongoDB service on your local machine by running the following command: mongod
 
 6.Navigate to frontend_backend directory from the present working directory.
 
