@@ -48,7 +48,7 @@ The Cow Facial Recognition system can be used in various real-world scenarios to
 
 5.Start the MongoDB service by running the following command:
    ```bash
-   mongod
+   mongod```
 
 6.Navigate to frontend_backend directory from the present working directory.
 
