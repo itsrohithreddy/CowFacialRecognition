@@ -38,19 +38,30 @@ The Cow Facial Recognition system can be used in various real-world scenarios to
 
 ## Setup
 
+
+Follow the steps below to set up and run the application on your local machine:
+
+
 1.Clone the repository: git clone https://github.com/itsrohithreddy/CowFacialRecognition.git
+
 
 2.Install dependencies: pip install -r requirements.txt
 
+
 3.This project uses **MongoDB** as the database to store information about the cows, such as their Unique ID, health records, and other metadata.
+
 
 4.Ensure MongoDB is installed locally on your machine. You can download it from [MongoDB's official website](https://www.mongodb.com/try/download/community).
 
+
 5.Start the MongoDB service on your local machine by running the following command: mongod
+
 
 6.Navigate to frontend_backend directory from the present working directory.
 
+
 7.Run the application: python app.py
+
 
 8.Access the application in your web browser at http://localhost:5000.
 
