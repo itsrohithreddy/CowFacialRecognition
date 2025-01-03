@@ -34,7 +34,7 @@ db = client.mooo
 cow_history = db.cow_history
 
 # Load Siamese neural network model and extract necessary layers
-loaded_model = tf.keras.models.load_model('../CowMuzzleSiameseModel.keras',safe_mode=False)
+loaded_model = tf.keras.models.load_model('../CowMuzzleSiameseModel2.keras',safe_mode=False)
 # loaded_model.save('../cowMuzzleSiameseModel.h5')
 # loaded_model = tf.keras.models.load_model('../cowMuzzleSiameseModel.h5')
 encoder_layer = keras.Model(inputs=loaded_model.get_layer('imageEncoder').input, outputs=loaded_model.get_layer("imageEncoder").output)
@@ -69,7 +69,7 @@ def similarity(encoded_repr_1: np.ndarray, encoded_repr_2: np.ndarray) -> tuple[
     probabilities = classifier.predict(np.array([distance]))
     print(probabilities)
     similar, dissimilar = probabilities[0][0]
-    if similar > 0.95:
+    if similar > dissimilar:
         return (True,similar)
     else:
         return (False,dissimilar)
